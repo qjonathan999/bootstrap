@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre de pila</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" autofocus>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control rounded-right" id="usuario" placeholder="Nombre de usuario" name="usuario" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <small class="text-muted">
+                    (opcional)
+                </small>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="dire_1">Habla a</label>
+                <input type="text" class="form-control" id="dire_1" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="dire_2">Dirección 2</label>
+                <small class="text-muted">
+                    (opcional)
+                </small>
+                <input type="text" class="form-control" id="dire_2" placeholder="Apartmento o suite">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="pais">País</label>
+                    <select class="custom-select mr-sm-2" id="pais">
+                        <option selected>Escoger...</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Brasil</option>
+                        <option value="3">Peru</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select class="custom-select mr-sm-2" id="estado">
+                        <option selected>Escoger...</option>
+                        <option value="1">Rio de Janeiro</option>
+                        <option value="2">Lima</option>
+                        <option value="3">Buenos Aires</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="cod_postal">Código Postal</label>
+                    <input type="text" class="form-control" id="cod_postal">
+                </div>
+            </div>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check_1">
+                <label class="form-check-label" for="check_1">
+                    La dirección de envío es la misma que mi dirección de facturación
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check_2">
+                <label class="form-check-label" for="check_2">
+                    Guarde esta información para la próxima vez
+                </label>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
